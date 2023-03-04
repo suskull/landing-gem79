@@ -1,0 +1,352 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ĐỎ 99 CLUB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="assets/images/icon/icon.png">
+    <!-- All stylesheet and icons css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/mystyle2.css?v=1">
+    <link rel="stylesheet" href="assets/css/swiper-custom.css?v=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/flip.min.css" />
+    <link rel="stylesheet" href="assets/css/countdown.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+
+</head>
+
+<body>
+    <!--Body Start Here-->
+    <div class="container-fluid background-image ">
+        <div class="container">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 formContainer d-flex justify-content-center">
+                    <div class="form-group registerStep">
+                        <br>
+                        <br>
+                        <form id="form-submit" onsubmit="return onSubmitStep1();">
+                            <input id="AccountName" name="AccountName" class="input-info" type="text"
+                                placeholder="&#xf007; Tên tài khoản" style="font-family:Arial, FontAwesome" required />
+
+                            <input id="Password" name="Password" class="input-info" type="password"
+                                placeholder="&#xf023; Mật khẩu" style="font-family:Arial, FontAwesome" required />
+
+                            <input id="Password2" name="Password2" class="input-info" type="password"
+                                placeholder="&#xf023; Nhập lại mật khẩu" style="font-family:Arial, FontAwesome"
+                                required />
+                            <div class="captchaContainer">
+                                <img id="captcha" class="captchaImage" src="" />
+                                <input id="inputCaptcha" name="inputCaptcha" class="input-info input-captcha"
+                                    type="text" placeholder="Captcha" style="font-family:Arial, FontAwesome" required />
+                            </div>
+                            <input id="submit-input" type="submit" value="ĐĂNG KÝ">
+                        </form>
+                        <form id="form-nickname" onsubmit="return onSubmitStep2();" style="display:none;">
+                            <p class="message">Đăng ký tài khoản thành công. Mời nhập tên nhân vật: <br /><br /></p>
+                            <input id="Nickname" name="Nickname" class="input-info" type="text"
+                                placeholder="&#xf007; Nickname" style="font-family:Arial, FontAwesome" required />
+                            <!-- <input id="InviteCode" name="InviteCode" class="input-info" type="text" placeholder="&#xf031; Invite Code" style="font-family:Arial, FontAwesome" /> -->
+                            <div class="captchaContainer">
+                                <img id="captchaNickname" class="captchaImage" src="" />
+                                <input id="inputCaptchaNickname" name="inputCaptchaNickname"
+                                    class="input-info input-captcha" type="text" placeholder="Captcha"
+                                    style="font-family:Arial, FontAwesome" required />
+                            </div>
+                            <input id="submit-input" type="submit" value="Đặt Nickname">
+                        </form>
+                        <br>
+                    </div>
+                    <div class="form-group finalStep" style="display: none;">
+                        <strong class="message">Bạn đã đặt tên nhân vật thành công.</strong>
+                        <p id="message">
+                            KIẾM 100TR MỖI THÁNG ỔN ĐỊNH CÙNG ĐỎ99 <br />
+                            Đăng ký trở thành đại lý của ĐỎ99 để nhận những chính sách tốt nhất. Ai cũng có thể là đại
+                            lý.<br /><br />
+                            Chính sách đại lý:<br />
+                            - Thưởng % hoa hồng cực lớn theo số tiền đặt cược của hội viên được bạn mời vào game.<br />
+                            - Thưởng hoa hồng khủng đứng Top tuần, Top tháng khi bạn mời được càng nhiều hội viên.<br />
+                            - Chi tiết sự kiện: <a href="https://t.me/c/1126477142/25" target="_blank">Link</a> <br />
+                            - Nhận link đại lý: <a id="linkRef"></a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 logoContainer">
+                    <a href="#" class="text-center">
+                        <!-- <img class="img-responsive" src="assets/images/icon/logo.png"> -->
+                        <img class="img-responsive" src="assets/images/icon/logo.png" />
+                    </a>
+                    <br>
+                    <div class="time-opening">
+
+                    </div>
+                    <div class="time-countdown">
+
+                        <div id="count-clock1"></div>
+
+                        <br>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 socialContainer mt-3">
+                    <ul class="d-flex align-items-center justify-content-center">
+                        <a href="https://www.facebook.com/game.do99.club" target="_blank">
+                            <li class="flex-item"></li>
+                        </a>
+                        <a href="https://t.me/+ItCV4zzcKao3Yzhl" target="_blank">
+                            <li class="flex-item-2"></li>
+                        </a>
+
+
+                    </ul>
+
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-3 col-md-3">
+
+                </div>
+                <div class="col-lg-6 col-md-6 la_phone">
+                    <div class="swiper-bg la_swiper-bg">
+                        <br>
+                        <div class="swiper-grid la_swiper-grid">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide swiper-slide-1 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-2 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-3 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-4 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-5 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-6 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-7 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-8 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-9 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-10 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-11 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-12 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-13 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+                                    <div class=" swiper-slide swiper-slide-14 la_swiper"
+                                        onclick="window.open('#','mywindow');">
+                                    </div>
+
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+
+                            </div>
+                        </div>
+                        <br>
+
+                        <div id="bg-download" class="download-btn mt-3" onclick="onClickDownload();">
+
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- All Needed JS -->
+    <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/fontawesome.min.js"></script>
+    <script src="assets/js/flip.min.js"></script>
+    <script src="assets/js/count_down/js/vue.js"></script>
+    <script src="assets/js/count_down/js/moment.min.js"></script>
+    <script src="assets/js/count_down/js/count_aclock.js?v=1"></script>
+    <!-- <script src="assets/js/jquery.countdown.js"></script> -->
+    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script>
+        window.SSO_URL = "https://apilanding.do99.club";
+        window.REF_URL = "https://dangky.do99.club";
+        reloadCaptcha = () => {
+            $(".input-captcha").val("");
+            $.ajax({
+                url: window.SSO_URL + "/Captcha/Get?length=3&width=95&height=33",
+                method: "GET",
+                success: (response) => {
+                    $(".captchaImage").attr("src", "data:image/jpeg;base64," + response["1"]);
+                    window.captchaVerify = response["0"];
+                }
+            })
+        }
+
+        reloadLinkRef = () => {
+            $.ajax({
+                url: window.SSO_URL + "/AffAPI/Afiliate_Infor",
+                method: "GET",
+                crossDomain: true,
+                xhrFields: { withCredentials: true },
+                success: (response) => {
+                    $("#linkRef").text(window.REF_URL + "?ref=" + response.InviteCode);
+                    $("#linkRef").attr("href", window.REF_URL + "?ref=" + response.InviteCode);
+                }
+            })
+        }
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            showsPagination: false,
+            loop: true,
+            // autoplay: {
+            //     delay: 3000,
+            // },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        // $("#getting-started")
+        //     .countdown("2022/10/16", function (event) {
+        //         $(this).text(
+        //             event.strftime('%D days %H:%M:%S')
+        //         );
+        //     });
+
+        getUrlParameter = (sParam) => {
+            var sPageURL = window.location.search.substring(1),
+                sURLVariables = sPageURL.split('&'),
+                sParameterName,
+                i;
+
+            for (i = 0; i < sURLVariables.length; i++) {
+                sParameterName = sURLVariables[i].split('=');
+
+                if (sParameterName[0] === sParam) {
+                    return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+                }
+            }
+            return false;
+        };
+
+        window.jQuery(document).ready(function ($) {
+            // captcha
+            reloadCaptcha();
+        });
+
+        onClickDownload = () => {
+            // window.open('#','mywindow');
+            alert("Coming soon");
+        }
+        onSubmitStep1 = () => {
+            let AccountName = $("#AccountName").val();
+            let Password = $("#Password").val();
+            let Password2 = $("#Password2").val();
+            let Captcha = $("#inputCaptcha").val();
+
+            if (Password != Password2) {
+                alert("Nhập lại mật khẩu không đúng. Vui lòng thử lại");
+                return false;
+            }
+
+            $.ajax({
+                url: window.SSO_URL + "/acc/CreateAccounts",
+                method: "POST",
+                crossDomain: true,
+                xhrFields: { withCredentials: true },
+                data: JSON.stringify({
+                    AccountName: AccountName,
+                    Password: Password,
+                    Password2: Password,
+                    Captcha: Captcha,
+                    Verify: window.captchaVerify,
+                    JoinFrom: 1,
+                    strUTM: window.location.href,
+                }),
+                contentType: "application/json",
+                dataType: 'json',
+                success: (response) => {
+                    reloadCaptcha();
+                    if (response.ResponseCode == -2523) {
+                        $("#form-submit").hide();
+                        $("#form-nickname").show();
+                    }
+                    if (response.ResponseCode == -2508) {
+                        alert(response.Description);
+                    }
+                }
+            })
+            return false;
+        }
+        onSubmitStep2 = () => {
+            let Nickname = $("#Nickname").val();
+            let InviteCode = getUrlParameter('ref') || getUrlParameter('Ref');
+            if (!InviteCode) {
+                InviteCode = "";
+            }
+            let Captcha = $("#inputCaptchaNickname").val();
+
+            $.ajax({
+                url: window.SSO_URL + "/acc/UpdateNickName",
+                method: "POST",
+                crossDomain: true,
+                xhrFields: { withCredentials: true },
+                data: JSON.stringify({
+                    Nickname: Nickname,
+                    InviteCode: InviteCode,
+                    Captcha: Captcha,
+                    Verify: window.captchaVerify,
+                }),
+                contentType: "application/json",
+                dataType: 'json',
+                success: (response) => {
+                    if (response.ResponseCode > 0) {
+                        reloadLinkRef();
+                        $(".registerStep").hide();
+                        $(".finalStep").show();
+                    } else {
+                        alert(response.Description);
+                    }
+                }
+            })
+            return false;
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

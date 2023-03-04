@@ -1,0 +1,126 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+
+}
+
+.swiper-bg {
+    background-image: url("../images/icon/phone.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 240px;
+    cursor: pointer;
+
+}
+
+.swiper-slide-1 {
+    background-image: url("../images/m-1.webp");
+}
+
+.swiper-slide-2 {
+    background-image: url("../images/m-2.webp");
+}
+
+.swiper-slide-3 {
+    background-image: url("../images/m-3.webp");
+}
+
+.swiper-slide-4 {
+    background-image: url("../images/m-4.webp");
+}
+
+.swiper-slide-5 {
+    background-image: url("../images/m-5.webp");
+}
+
+.swiper-slide-6 {
+    background-image: url("../images/m-6.webp");
+}
+
+.swiper-slide-7 {
+    background-image: url("../images/m-7.webp");
+}
+
+.swiper-slide-8 {
+    background-image: url("../images/m-8.webp");
+}
+
+.swiper-slide-9 {
+    background-image: url("../images/m-9.webp");
+}
+
+.swiper-slide-10 {
+    background-image: url("../images/m-10.webp");
+}
+
+.swiper-slide-11 {
+    background-image: url("../images/m-11.webp");
+}
+
+.swiper-slide-12 {
+    background-image: url("../images/m-12.webp");
+}
+
+.swiper-slide-13 {
+    background-image: url("../images/m-13.webp");
+}
+
+.swiper-slide-14 {
+    background-image: url("../images/m-14.webp");
+}
+
+
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.swiper-grid {
+    width: 69%;
+    height: 240px;
+    margin: auto;
+}
+
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: none !important;
+    color: #808080 !important
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: none !important;
+    color: #808080 !important
+}

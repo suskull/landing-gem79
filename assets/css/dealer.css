@@ -1,0 +1,114 @@
+.dealer_bg {
+    background-image: url('../images/bg_landing_c.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.dealer_title {
+    width: 100%;
+}
+
+.dealer_image {
+    width: 100%;
+}
+
+.dealer_text {
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+
+.dealer_text-highlight {
+    color: yellow;
+    font-size: 24px;
+}
+
+.dealer_text::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -4px;
+}
+
+.dealer_coin::before {
+    background-image: url('../images/icon_coin.png');
+}
+
+.dealer_dollar::before {
+    background-image: url('../images/icon_dollar.png');
+}
+
+.dealer_spade::before {
+    background-image: url('../images/icon_spade.png');
+}
+
+.dealer_list {
+    margin-top: 32px;
+}
+
+.dealer_list li {
+    list-style-type: none;
+    margin-top: 16px;
+}
+
+.dealer_link {
+    width: 100px;
+    margin-left: 8px;
+
+    animation: zoom-in-zoom-out 1s ease infinite;
+
+}
+
+@media screen and (min-width: 768px) {
+
+    .dealer_title,
+    .dealer_list {
+        width: 75%;
+    }
+
+    .dealer_link {
+        width: 150px;
+        margin-left: 16px;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .dealer_title {
+        width: 60%;
+    }
+
+    .dealer_list {
+        width: 62%;
+    }
+
+    .dealer_link {
+        width: 200px;
+        margin-left: 32px;
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.15, 1.15);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}

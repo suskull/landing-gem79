@@ -1,0 +1,410 @@
+.l4_container {
+    background-image: url('/assets/images/l4_bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.l4_mainAnimation {
+    position: absolute;
+    bottom: 0px;
+    right: -8%;
+    width: 40%;
+    object-fit: contain;
+}
+
+.l4_container img {
+    width: 100%;
+}
+
+.l4_top {
+    padding-top: 16px;
+}
+
+.l4_leaderBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.l4_playerLeaderBoard {
+    position: relative;
+}
+
+.l4_dealerLeaderBoard {
+    position: relative;
+}
+
+.l4_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.l4_logo {
+    width: 20%;
+}
+
+.l4_text {
+    width: 65%;
+}
+
+.l4_btnGift {
+    width: 35%;
+    cursor: pointer;
+    animation: zoom-in-zoom-out 1s ease infinite;
+    margin-top: -32px;
+}
+
+.l4_btnContainer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 85%;
+    justify-content: center;
+}
+
+.l4_btn {
+    cursor: pointer;
+    animation: zoom-in-zoom-out_mini 1s ease infinite;
+}
+
+.l4_bottom {
+    margin-top: 24px;
+}
+
+.l4_items {}
+
+.l4_social {
+    display: flex;
+    align-items: flex-start;
+    z-index: 9;
+}
+
+.l4_socialIcon {
+    width: 33%;
+}
+
+.input-info {
+    padding-left: 10px;
+    border-radius: 12px;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #d6d6d6;
+}
+
+.l4_mobileForm {
+    display: none;
+}
+
+#form-modal {
+    display: none;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.l4_formPc {
+    display: block;
+    width: 33%;
+    position: relative;
+    margin: 10% auto 0;
+}
+
+.l4_secondAnimtion {
+    position: absolute;
+    left: -25vw;
+}
+
+.l4_formBtns {
+    position: absolute;
+    top: 18%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    width: 100%;
+}
+
+.l4_formBtn {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 48%;
+    flex: 1;
+    height: 4vw;
+    cursor: pointer;
+}
+
+.l4_btnClose {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -5px;
+    right: -30px;
+    cursor: pointer;
+}
+
+.l4_formBtnRegister {
+    background-image: url('/assets/images/l4_btnBg.png');
+}
+
+.l4_formBtnLogin {
+    /* background-image: url('/assets/images/l4_btnBg.png'); */
+}
+
+.l4_formBtnText {
+    width: 67%;
+
+    /* text-shadow: 2px 0 #F7FF0A, -2px 0 #F7FF0A, 0 2px #F7FF0A, 0 -2px #F7FF0A,
+        1px 1px #F7FF0A, -1px -1px #F7FF0A, 1px -1px #F7FF0A, -1px 1px #F7FF0A; */
+}
+
+.l4_formBtnTextRegister {
+    margin-top: -4px;
+}
+
+.l4_btnNotActive {}
+
+.l4_formBtnTextLogin {
+    width: 82%;
+}
+
+
+.l4_form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.l4_form-register {
+    /* display: none; */
+}
+
+.l4_form-login {
+    display: none;
+}
+
+.l4_submit {
+    position: absolute;
+    bototm: 0;
+    bottom: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.l4_submit :hover {
+    transform: scale(1.1);
+}
+
+.l4_submit :active {
+    transform: scale(1.2);
+}
+
+
+
+.l4_submitLogin {
+    display: none;
+}
+
+.l4_itemContainer {
+    height: 100px;
+    /* width: 100px; */
+}
+
+.l4_leaderBoardContent {
+    position: absolute;
+    top: 4.6vw;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    left: 5vw;
+    font-size: 1.5vw;
+    width: 70%;
+}
+
+.l4_leaderBoardRow {
+    display: flex;
+    justify-content: space-between;
+    font-family: UTM Colossalis;
+    font-weight: 800;
+}
+
+.l4_leaderBoardTitle {
+    color: white;
+}
+
+.l4_leaderBoardScore {
+    background: #FCEABB;
+    background: linear-gradient(to top, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.l4_secondAnimtion {
+    position: absolute;
+    left: -25vw;
+    width: 100%;
+}
+
+
+
+.captchaContainer {
+    width: 82%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.captchaImage {
+    border-radius: 12px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    border: none;
+    margin-bottom: 15px;
+    background-color: #d6d6d6;
+    float: right;
+    width: 100px !important;
+    height: 34px;
+}
+
+.input-captcha {
+    float: left;
+    width: calc(100% - 120px);
+}
+
+
+@media screen and (max-width: 1366px) {
+
+    .l4_secondAnimtion {
+        position: absolute;
+        left: -25vw;
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+
+    .l4_form {
+        top: 37%;
+    }
+
+    .l4_mobileForm {
+        display: block;
+    }
+
+    .l4_btnClose {
+        display: none;
+    }
+
+    .l4_container {
+        background-image: url('/assets/images/l4_bg_mobile.png');
+    }
+
+    .l4_mainAnimation {
+        display: none;
+    }
+
+    .l4_leaderBoard {
+        display: none;
+    }
+
+    .l4_mobileForm {
+        position: relative;
+    }
+
+    .l4_btn {
+        animation: zoom-in-zoom-out 1s ease infinite;
+        width: 25%;
+    }
+
+    .l4_btnGift {
+        display: none;
+    }
+
+    .l4_items {
+        display: none;
+    }
+
+    .l4_social {
+        justify-content: center;
+    }
+
+    .l4_socialIcon {
+        width: 20%;
+    }
+
+
+    .l4_logo {
+        width: 40%;
+    }
+
+    .l4_text {
+        width: 100%;
+    }
+
+    .l4_btnContainer {
+        width: 90%;
+        margin-top: 16px;
+        gap: 8px;
+        justify-content: space-around;
+    }
+
+    .l4_bottom {
+        margin-top: 8px;
+    }
+
+    .l4_formBtn {
+        height: 50px;
+    }
+
+
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.3, 1.3);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom-in-zoom-out_mini {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.05, 1.05);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
