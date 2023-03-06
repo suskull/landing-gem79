@@ -788,6 +788,7 @@ li {
     .swiper-button-next,
     .swiper-button-prev {
         top: 56% !important;
+        display: none;
     }
 }
 
