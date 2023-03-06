@@ -70,6 +70,12 @@
     width: 400px;
 }
 
+.l2_download,
+.l2_tele,
+.l2_facebook{
+    cursor: pointer;
+}
+
 @keyframes zoom-in-zoom-out {
     0% {
         transform: scale(1, 1);
