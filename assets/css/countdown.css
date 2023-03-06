@@ -219,7 +219,7 @@
     -webkit-perspective: 600px;
     perspective: 600px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 28px;
 }
 
 .flip-clock *,
@@ -443,7 +443,7 @@
 
 @media screen and (max-width: 768px) {
     .flip-card {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 
 }

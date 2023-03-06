@@ -1,0 +1,157 @@
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.l1_container {
+    background-image: url('../images/l1_background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 96px;
+    
+}
+
+.l1_container img {
+    width: 100%;
+}
+
+.l1_midContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.l1_rightContent {
+    flex-direction: column;
+    gap: 16px;
+}
+
+.l1_downloadContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.l1_download {
+    animation: zoom-in-zoom-out 1s ease infinite;
+
+}
+
+.l1_des {
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.l1_countdownContainer {
+    width: 70%;
+}
+.l1_images {
+    width: 90%;
+    margin-top: -20px;
+}
+
+.l1_icon {
+    width: 33%;
+}
+
+.l1_countdown {
+    background-image: url("../images/icon/count-down-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -12px auto 0;
+    width: 400px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.15, 1.15);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom-in-zoom-out_mini {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.05, 1.05);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .l1_container {
+        flex-direction: column;
+        padding: 16px;
+        background-image: url('../images/l1_background_mobile.png');
+        justify-content: unset;
+        gap: 20px;
+    }
+
+    .l1_icon {
+        width: 40vw;
+    }
+
+    .l1_downloadContainer {
+        flex-direction: column-reverse;
+        width: 100%;
+        margin-top: 150px;
+    }
+
+    .l1_images {
+        width: 100%;
+    }
+
+    .l1_countdown {
+        width: 70vw;
+        background-size: contain;
+        margin: -18px auto 0;
+    }
+
+    .l1_countdown .flip-clock {
+        padding-top: 28px;
+    }
+    
+
+    .l1_download {
+        width: 50vw;
+    }
+
+    .l1_des {
+        font-size: 11px;
+    }
+
+    .l1_rightContent {
+        flex-direction: row;
+        
+    }
+
+    .l1_tele {
+        width: 33vw;
+    }
+
+    .l1_facebook {
+        width: 33vw;
+    }
+
+}
